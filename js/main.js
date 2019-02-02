@@ -20,13 +20,13 @@ myFullpage = new fullpage('#fullpage', {
   }
   ham.addEventListener('click',function(e){
   e.preventDefault();  
-  toggleMenu();
+  toggleMenu();})
   ham_menu.addEventListener('click',function(e){  
     target=e.target;
     if (target.className==='menu__link menu__link_ham') {
       toggleMenu();
     }
-  })         
+           
   })    
   })();
 
