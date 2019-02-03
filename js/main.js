@@ -1,3 +1,4 @@
+
 // Функция для работы меню-гамбургер
 (function(){
   const ham=document.querySelector('.hamburger');
@@ -10,13 +11,13 @@
   }
   ham.addEventListener('click',function(e){
   e.preventDefault();  
-  toggleMenu();})
+  toggleMenu();
   ham_menu.addEventListener('click',function(e){  
     target=e.target;
     if (target.className==='menu__link menu__link_ham') {
       toggleMenu();
     }
-           
+  })         
   })    
   })();
 
@@ -34,6 +35,7 @@ let inAnimate=false;//флаг проверки, запущена ли аним�
 
 //обработчик клика по кнопке next
 next.addEventListener('click', function(e){
+  console.log('test')
   e.preventDefault();
   let currentRight=parseInt(slider.right);  
   if (!inAnimate){
