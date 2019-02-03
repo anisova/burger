@@ -116,14 +116,14 @@ prev.addEventListener('click', function(e){
     for (var i=0; i<btn.length;i++) {
       let overlayText=btn[i].previousElementSibling.textContent;
       let overlayName=btn[i].previousElementSibling.previousElementSibling.textContent;   
-      btn[i].addEventListener('click', function () {
-      event.preventDefault();           
+      btn[i].addEventListener('click', function (e) {
+      e.preventDefault();           
       overlay.open();      
       overlay.setContent(overlayName,overlayText);      
           })
         }   
-    order.addEventListener('click',function(){
-      event.preventDefault();           
+    order.addEventListener('click',function(e){
+      e.preventDefault();           
       overlay.open();      
       overlay.setContent("Сообщение","Ваше письмо отправлено.");
     })
