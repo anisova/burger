@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <title>Burger</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="plagins/fullpage/fullpage.min.css">
+  <!-- <link rel="stylesheet" href="plagins/fullpage/fullpage.min.css"> -->
   <link rel="stylesheet" href="css/main.css"> <!-- Подключаем CSS -->
   <link rel="stylesheet" href="css/normalize.css"> <!-- Подключаем normalize -->
   
 </head>
 
 <body>
-  <div class="wrapper" id="fullpage">
+  <div class="wrapper">
     <section class="section first" id="first">
       <div class="container first__wrap">
         <div class="header">
@@ -355,7 +355,7 @@
 
       <ul class="vert-accord">
         <li class="vert-accord__item">
-          <div class="vert-accord__link" style="background:url('img/menu/bg1.jpg') no-repeat center top/cover">
+          <div class="vert-accord__link" style="background:url('img/menu/bg1.jpg')">
             <div class="vert-accord__tittle">Для мясоедов
             </div>
           </div>
@@ -369,7 +369,7 @@
           </div>
         </li>
         <li class="vert-accord__item">
-          <div class="vert-accord__link" style="background:url('img/menu/bg2.jpg') no-repeat center top/cover">
+          <div class="vert-accord__link" style="background:url('img/menu/bg2.jpg')">
             <div class="vert-accord__tittle">Вегетарианское
             </div>
           </div>
@@ -381,7 +381,7 @@
           </div>
         </li>
         <li class="vert-accord__item">
-          <div class="vert-accord__link" style="background:url('img/menu/bg3.jpg') no-repeat center top/cover">
+          <div class="vert-accord__link" style="background:url('img/menu/bg3.jpg')">
             <div class="vert-accord__tittle">Диетическое
             </div>
           </div>
@@ -572,13 +572,14 @@
     <section class="section section_map">
       <div class="map" id="map">
       </div>
-      <footer class="footer">
-          <div class="container footer__contacts">
-            <p class="footer__address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</p>
-            <p class="footer__phone">+7 (812) 365-13-47</p>
-          </div>
-        </footer>
+     
     </section>
+    <footer class="footer">
+      <div class="container footer__contacts">
+        <p class="footer__address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</p>
+        <p class="footer__phone">+7 (812) 365-13-47</p>
+      </div>
+    </footer>
    
   </div>
   <script type="template" class='OverlayTemplate'>
@@ -589,9 +590,7 @@
           <div class="close">x</div>
         </div>
       </div>
-  </script>
-  <script type="text/javascript" src="plagins/fullpage/fullpage.min.js"></script>
-  
+  </script>  
   <script src="js/main.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <script src="js/map.js"></script>
