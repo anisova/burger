@@ -1,4 +1,3 @@
-
 // Функция для работы меню-гамбургер
 (function(){
   const ham=document.querySelector('.hamburger');
